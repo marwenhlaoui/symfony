@@ -72,7 +72,7 @@ EOT
 
             $helper = $this->getHelper('question');
 
-            $question = new Question('Please enter your firstname');
+            $question = new Question('Please enter your Firstname : ');
             $question->setValidator(function ($value) {
                 if (trim($value) == '') {
                     throw new \Exception('The firstname can not be empty');
@@ -88,7 +88,7 @@ EOT
 
             $helper = $this->getHelper('question');
 
-            $question = new Question('Please enter your lastname');
+            $question = new Question('Please enter your Lastname : ');
             $question->setValidator(function ($value) {
                 if (trim($value) == '') {
                     throw new \Exception('The lastname can not be empty');
